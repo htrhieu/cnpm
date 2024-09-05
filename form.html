@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        table th, td {
+            border: 1px solid black;
+            width: 100px;
+            height: 30px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        .user{
+            text-align: center;
+        }
+        .ngay{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="user" colspan="2">
+                Form đăng kí
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%;">
+                Full name
+            </td>
+            <td class="nhap">
+                <input type="text" placeholder="Nhập họ tên">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                User name
+            </td>
+            <td class="nhap"><input type="text" placeholder="Nhập tên dăng nhập"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" placeholder="Nhập mật khẩu"></td>
+
+        </tr>
+        <tr>
+            <td>Nhập lại Password</td>
+            <td><input type="password" placeholder="Nhập lại password"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="checkbox">Nam
+                <input type="checkbox">Nữ
+                <input type="checkbox">Giới tính khác
+            </td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td>
+                Ngày<input type="number" class="ngay" min="1" max="31">
+                Tháng <input type="number" class="ngay" min="1" max="12">
+                Năm <input type="number" class="ngay" min="1900" max = "3000">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Sở thích
+            </td>
+            <td>
+                Thể thao<input type="radio">
+                Xem Phim <input type="radio">
+                Nghe nhạc<input type="radio">
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ
+            <td>
+                <textarea name="" id="" cols="40" rows="2"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Avatar</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="reset" value="Reset">
+                <button>OK</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
